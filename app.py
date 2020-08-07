@@ -343,7 +343,7 @@ def predict():
     
     pred = regressor.predict(data)
     op = round(pred[0],0)
-    return render_template('result.html',prediction="Rs. {}".format(op))
+    return render_template('result.html',prediction = op)
 
 if __name__ == '__main__':
 	app.run(debug=True)
